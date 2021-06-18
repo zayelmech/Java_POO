@@ -17,3 +17,10 @@ La Modularidad en Programación Orientada a Objetos nos ayuda a:
 - Que nuestro código sea mantenible.
 - Mejorar la legibilidad.
 - Resolución rápida de problemas.
+
+El **Método Constructor** es el primer método que se ejecuta por defecto cuando creamos una clase, nos permite crear nuevas instancias de una clase. Lo invocamos con la palabra reservada `new` seguida del nombre con el que inicializamos la clase y paréntesis.
+
+```Js
+// nombreDeLaInstancia = new MétodoConstructor();
+myDoctor = new Doctor();
+```
