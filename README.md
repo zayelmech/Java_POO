@@ -20,7 +20,25 @@ La Modularidad en Programación Orientada a Objetos nos ayuda a:
 
 El **Método Constructor** es el primer método que se ejecuta por defecto cuando creamos una clase, nos permite crear nuevas instancias de una clase. Lo invocamos con la palabra reservada `new` seguida del nombre con el que inicializamos la clase y paréntesis.
 
-```Js
+```java
 // nombreDeLaInstancia = new MétodoConstructor();
 myDoctor = new Doctor();
+```
+## Static 
+Los métodos y variables estáticos nos ayudan a ejecutar o conseguir algún código desde clases no han sido instanciadas, ya que sus valores se guardan en la memoria de nuestro programa, no en diferentes objetos instanciados a través de una clase.
+
+Las variables estáticas mantienen su valor durante todo el ciclo de vida de nuestro programa, por lo tanto, podemos alterar los valores de una variable estática desde una clase y consumir su valor alterado desde otra sin necesidad de conectar ambas clases.
+
+También podemos importar los métodos estáticos de una clase para usarlos sin necesidad de escribir el nombre de la clase:
+
+```Java
+import static com.anncode.operaciones.Calculadora.*
+import static java.lang.Math.*
+
+public class Principal {
+  public static void (String[] args) {
+    int number = suma(3, 5);
+    System.out.println(number + PI);
+  }
+}
 ```
