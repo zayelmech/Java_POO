@@ -11,6 +11,6 @@ public class Patient {
     Patient(String name, String email){
         this.name =name;
         this.email=email;
-        System.out.println("Hola "+ this.name "\n email:"+this.email);
+        System.out.println("Hola "+ this.name + "\n email:"+this.email);
     }
 }

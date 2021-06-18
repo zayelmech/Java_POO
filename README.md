@@ -42,3 +42,29 @@ public class Principal {
   }
 }
 ```
+
+## Sobrecarga de métodos y constructores
+
+A veces necesitamos que dos o más métodos de una misma clase tengan el mismo nombre, pero con diferentes argumentos o distintos tipos de argumentos/valores de retorno.
+
+Afortunadamente, Java nos permite ejecutar código y métodos diferentes dependiendo de los argumentos que reciba nuestra clase.
+
+```Java
+public class Calculadora {
+  // Los dos parámetros y el valor de retorno son de tipo int
+  public int suma(int a, int b) {
+    return a + b;
+  }
+
+  // Los dos parámetros y el valor de retorno son de tipo float
+  public float suma(float a, float b) {
+    return a + b;
+  }
+
+  // Un parámetro es de tipo int, mientras que el otro parámetro
+  // y el valor de retorno son de tipo float
+  public float suma(int a, float b) {
+    return a + b;
+  }
+}
+```
