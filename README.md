@@ -80,3 +80,9 @@ La memoria **Stack** es mucho más rápida y nos permite almacenar nuestra infor
 Los objetos también usan la memoria Stack, pero no para guardar su información, sino para guardar las coordenadas a la verdadera ubicación del objeto en la memoria Heap, una memoria que nos permite guardar grandes cantidades de información, pero con un poco menos de velocidad.
 
 ![alt text](https://raw.githubusercontent.com/zayelmech/Java_POO/main/Recursos/memoria.jpg)
+
+## Encapsulamiento: Modificadores de acceso
+
+Los **Modificadores de Acceso** nos ayudan a limitar desde dónde podemos leer o modificar atributos especiales de nuestras clases. Podemos definir qué variables se pueden leer/editar por fuera de las clases donde fueron creadas. Esto lo conocemos como **Encapsulamiento**.
+
+![alt text](https://raw.githubusercontent.com/zayelmech/Java_POO/main/Recursos/accceso.webp)

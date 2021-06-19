@@ -2,20 +2,9 @@ import static UI.UIMenu.*;
 
 public class Main {
     public static void main(String[] args){
-/*
-        //Declarar e instanciar un object
-        Doctor myDoctor = new Doctor();
-        myDoctor.name="Alejandro Rodriguez";
-        myDoctor.showName();
-        myDoctor.showId();
-        System.out.println(Doctor.id);
 
-        Doctor myDoctorAnn = new Doctor();
-        myDoctor.showId();
-        System.out.println(Doctor.id);
-*/
         //showMenu();
-
+/*
         Patient paciente1= new Patient("Abdiel","abdielcro");
         Patient paciente2= new Patient("Jesus","jesus");
 
@@ -29,6 +18,13 @@ public class Main {
         System.out.println(paciente1);
         System.out.println(paciente2);
 
+    */
+
+        Doctor myDoctor = new Doctor("Abdiel","Pediatra");
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.speciality);
+
+        Patient paciente= new Patient("Abdiel","abdielcro");
 
     }
 }
