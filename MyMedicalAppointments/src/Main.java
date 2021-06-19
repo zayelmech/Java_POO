@@ -25,6 +25,7 @@ public class Main {
         System.out.println(myDoctor.speciality);
 
         Patient paciente= new Patient("Abdiel","abdielcro");
-
+        paciente.setWeight(43);
+        System.out.println(paciente.getWeight());
     }
 }

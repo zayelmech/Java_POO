@@ -86,3 +86,7 @@ Los objetos también usan la memoria Stack, pero no para guardar su información
 Los **Modificadores de Acceso** nos ayudan a limitar desde dónde podemos leer o modificar atributos especiales de nuestras clases. Podemos definir qué variables se pueden leer/editar por fuera de las clases donde fueron creadas. Esto lo conocemos como **Encapsulamiento**.
 
 ![alt text](https://raw.githubusercontent.com/zayelmech/Java_POO/main/Recursos/accceso.webp)
+
+## Getters y Setters 
+
+Nos permiten leer y escribir (respectivamente) los valores de nuestras variables privadas desde fuera de la clase donde fueron creadas. Con los **Getters** obtenemos los datos de las variables y con los **Setters** asignamos o cambiamos su valor.
