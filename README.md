@@ -124,3 +124,9 @@ Además de los métodos de las superclases, también podemos redefinir el compor
 La sobreescritura de constructores consiste en usar los miembros heredados de una supreclase pero con argumentos diferentes.
 
 Recuerda que no podemos sobrescribir los métodos marcados como `final` o `static`.
+
+## Interfaces 
+
+Las **Interfaces** son un tipo de referencia similar a una clase con solo constantes y definiciones de métodos, son de gran ayuda para definir los comportamientos que son redundantes y queremos reutilizar un más de una clase, incluso cuando tenemos muchas clases y no todas pertenecen a la misma “familia”.
+
+Las interfaces establecen la forma de las clases que la implementan, así como sus nombres de métodos, listas de argumentos y listas de retorno, pero NO sus bloques de código, eso es responsabilidad de cada clase.

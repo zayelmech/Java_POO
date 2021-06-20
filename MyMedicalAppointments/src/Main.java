@@ -22,15 +22,17 @@ public class Main {
 
     */
 
-        Doctor myDoctor = new Doctor("Abdiel","Pediatra");
+        Doctor myDoctor = new Doctor("Abdiel","abdielcro@imecatro.com");
         myDoctor.addAvailableAppointment(new Date(),"4pm");
         myDoctor.addAvailableAppointment(new Date(),"10pm");
         myDoctor.addAvailableAppointment(new Date(),"8am");
-        System.out.println(myDoctor.getAvailableAppointments());
+
+        System.out.println(myDoctor);
+        /*
         for(Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
             System.out.println(aA.getDate()+ "\t" +aA.getTime());
         }
-
+        */
         System.out.println("\n");
         Patient paciente= new Patient("Abdiel","abdielcro");
         paciente.setWeight(43);
