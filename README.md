@@ -114,3 +114,13 @@ Las **Clases Estáticas** no necesitan ser instanciadas para poder ser llamadas 
 Además, podemos llamar al constructor de la clase padre desde sus diferentes subclases usando `super();` y enviando los argumentos que sean necesarios.
 
 Por otro lado, `this` nos permite especificar que nuestras variables están señalando a la misma clase donde estamos trabajando, ya sea una clase normal, anidada, subclase o superclase.
+
+## Polimorfismo: Sobreescritura de Métodos
+
+El **Polimorfismo** es una característica de la programación orientada a objetos que consiste en sobrescribir algunos métodos de la clase de la cual heredan nuestras subclases para asignar comportamientos diferentes.
+
+Además de los métodos de las superclases, también podemos redefinir el comportamiento de los métodos que “heredan” todos nuestros objetos, así como `.toString`, `hashCode`, `finalize`, `notify`, entre otros.
+
+La sobreescritura de constructores consiste en usar los miembros heredados de una supreclase pero con argumentos diferentes.
+
+Recuerda que no podemos sobrescribir los métodos marcados como `final` o `static`.

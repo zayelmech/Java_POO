@@ -31,8 +31,10 @@ public class Main {
             System.out.println(aA.getDate()+ "\t" +aA.getTime());
         }
 
+        System.out.println("\n");
         Patient paciente= new Patient("Abdiel","abdielcro");
         paciente.setWeight(43);
-        System.out.println(paciente.getWeight());
+        //System.out.println(paciente.getWeight());
+        System.out.println(paciente);
     }
 }
