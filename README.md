@@ -106,3 +106,11 @@ Las **Clases Anidadas** o **Clases Helper** son clases dentro de otras clases qu
 Podemos encontrar clases estáticas anidadas, clases internas que son locales a un método o clases internas anónimas. Las clases anidadas pueden llamar a cualquier tipo de elemento o método de nuestras clases.
 
 Las **Clases Estáticas** no necesitan ser instanciadas para poder ser llamadas y ejecutadas, aunque debes recordar que solo permiten llamar a los métodos estáticos de sus clases padre.
+
+## Super y This
+
+`Super` indica que una variable o método es de la clase padre, la superclase de cual heredan nuestras subclases, solo la usamos cuando aplicamos herencia.
+
+Además, podemos llamar al constructor de la clase padre desde sus diferentes subclases usando `super();` y enviando los argumentos que sean necesarios.
+
+Por otro lado, `this` nos permite especificar que nuestras variables están señalando a la misma clase donde estamos trabajando, ya sea una clase normal, anidada, subclase o superclase.
