@@ -157,3 +157,19 @@ public class AppointmentDoctor implements ISchedulable {
 A veces NO necesitamos implementar todos los métodos de una clase heredada o interfaz. No siempre necesitamos crear instancias o implementar todos los métodos heredados de una clase padre, así como tampoco podremos necesitamos algún método de nuestras interfaces, pero estas nos obligan a escribir el código de todos los métodos que definimos genéricamente.
 
 Afortunadamente, las **Clases Abstractas** resuelven todos estos problemas. Son una combinación entre interfaces y herencia donde no implementaremos todos los métodos ni tampoco crearemos instancias.
+
+
+Los **Métodos Abstractos** son los métodos que debemos implementar obligatoriamente cada vez que usemos nuestras clases abstractas, mientras que los métodos que no sean abstractos van a ser opcionales.
+
+```Java
+public abstract class Figura {
+  abstract void dibujar(); // obligatorio
+  void dibujar3D(); // no es obligatorio
+}
+
+class Triangulo extends Figura {
+  void dibujar() {
+    // Instrucciones para dibujar el triángulo...
+  }
+}
+```
