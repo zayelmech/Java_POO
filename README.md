@@ -184,3 +184,60 @@ Las **Clases Anónimas** son una forma de instanciar clases abstractas sin neces
 - Las **Interfaces** cuentan modificadores de acceso para métodos(default, private) lo que permite que la implementación de un método sea opcional como las clases Abstractas, los métodos de la Interface pueden implementaarse en diferentes familias, es decir, la relación va mas allá de la relación entre dos clases y la herencia de métodos deja de ser lineal.
 
 ![alt text](https://raw.githubusercontent.com/zayelmech/Java_POO/main/Recursos/abstracto.jpg)
+
+Las **Interfaces** nos permiten usar métodos abstractos y campos constantes para implementar herencia/polimorfismo de forma muy similar a las clases abstractas.
+
+A partir de Java 8 podemos tener implementación en métodos para heredar y reutilizar diferentes comportamientos. No todos los métodos de nuestras interfaces deben ser abstractos, ahora podemos usar el modificador de acceso `default` y desde Java 9 también `private`.
+
+```Java
+public interface MyInterface {
+  // Métodos default: nos permite heredar la definición
+  // de la función y también su implementación...
+  default void defaultMethod() {
+    privateMethod("Hello from the default method!");
+  }
+
+  // Métodos private: nos permiten definir comportamiento,
+  // pero solo se puede usar desde otras clases de esta
+  // interfaz, no se hereda a la clase hija....
+  private void privateMethod(final String message) {
+    System.out.println(message);
+  }
+
+  // Métodos abstractos: recuerda que todos los métodos
+  // son abstractos por defecto...
+  void normalMethod();
+}
+```
+
+## Herencia en interfaces
+
+Las interfaces pueden heredar de otras interfaces utilizando la palabra clave extends, el concepto de herencia se aplicará como naturalmente se practica en clases, es decir, la interfaz heredará y adquirirá los métodos de la interfaz padre.
+
+Una cosa interesante que sucede en caso de herencia con interfaces es que, aquí sí es permitido la herencia múltiple como ves a continuación:
+```Java
+public interface IReadable {
+	public void read();
+}
+
+
+public interface Visualizable extends IReadable, Serializable {
+	public void setViewed();
+	public Boolean isViewed();
+	public String timeViewed();
+}
+```
+Además siguiendo las implementaciones de métodos default y private de las versiones Java 8 y 9 respectivamente podemos sobreescribir métodos y añadirles comportamiento, si es el caso.
+
+```Java
+public interface Visualizable extends IReadable, Serializable {
+	public void setViewed();
+	public Boolean isViewed();
+	public String timeViewed();
+	
+@Override
+	default void read() {
+	// TODO Auto-generated method stub
+}
+}
+```
