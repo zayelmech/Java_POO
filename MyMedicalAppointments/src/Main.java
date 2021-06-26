@@ -1,14 +1,15 @@
-import java.util.Date;
+import model.Doctor;
+import model.Patient;
 
-import static UI.UIMenu.*;
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args){
 
         //showMenu();
 /*
-        Patient paciente1= new Patient("Abdiel","abdielcro");
-        Patient paciente2= new Patient("Jesus","jesus");
+        model.Patient paciente1= new model.Patient("Abdiel","abdielcro");
+        model.Patient paciente2= new model.Patient("Jesus","jesus");
 
         System.out.println(paciente1);// se imprime la direción de memoria
         System.out.println(paciente2);
@@ -29,7 +30,7 @@ public class Main {
 
         System.out.println(myDoctor);
         /*
-        for(Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
+        for(model.Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()){
             System.out.println(aA.getDate()+ "\t" +aA.getTime());
         }
         */

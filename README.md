@@ -22,7 +22,7 @@ El **Método Constructor** es el primer método que se ejecuta por defecto cuand
 
 ```java
 // nombreDeLaInstancia = new MétodoConstructor();
-myDoctor = new Doctor();
+myDoctor = new model.Doctor();
 ```
 ## Static 
 Los métodos y variables estáticos nos ayudan a ejecutar o conseguir algún código desde clases no han sido instanciadas, ya que sus valores se guardan en la memoria de nuestro programa, no en diferentes objetos instanciados a través de una clase.
@@ -130,3 +130,30 @@ Recuerda que no podemos sobrescribir los métodos marcados como `final` o `stati
 Las **Interfaces** son un tipo de referencia similar a una clase con solo constantes y definiciones de métodos, son de gran ayuda para definir los comportamientos que son redundantes y queremos reutilizar un más de una clase, incluso cuando tenemos muchas clases y no todas pertenecen a la misma “familia”.
 
 Las interfaces establecen la forma de las clases que la implementan, así como sus nombres de métodos, listas de argumentos y listas de retorno, pero NO sus bloques de código, eso es responsabilidad de cada clase.
+
+![alt text](https://raw.githubusercontent.com/zayelmech/Java_POO/main/Recursos/interfaces.webp)
+
+**Composición de Interfaces en Clases**: abstraer todos los métodos/comportamientos de una clase para modularizarlos (comprimirlos, encapsularlos) en una interfaz y reutilizar su código en diferentes clases.
+
+Las interfaces se crean utilizando la palabra reservada `interface` y se implementan en nuestras clases con `implements`.
+
+Recuerda que podemos heredar (implementar) más de una interfaz, pero no podemos hacerlo de las clases padres o _superclases_.
+
+```Java
+public interface ISchedulabe {
+  void schedule(Date date, String Time);
+}
+
+public class AppointmentDoctor implements ISchedulable {
+  @Override
+  public void schedule(Date date, String Time) {
+    // ...
+  }
+}
+```
+
+## Clases Abstractas
+
+A veces NO necesitamos implementar todos los métodos de una clase heredada o interfaz. No siempre necesitamos crear instancias o implementar todos los métodos heredados de una clase padre, así como tampoco podremos necesitamos algún método de nuestras interfaces, pero estas nos obligan a escribir el código de todos los métodos que definimos genéricamente.
+
+Afortunadamente, las **Clases Abstractas** resuelven todos estos problemas. Son una combinación entre interfaces y herencia donde no implementaremos todos los métodos ni tampoco crearemos instancias.
