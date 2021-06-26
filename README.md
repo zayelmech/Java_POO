@@ -173,3 +173,7 @@ class Triangulo extends Figura {
   }
 }
 ```
+
+## Clases anonimas 
+
+Las **Clases Anónimas** son una forma de instanciar clases abstractas sin necesidad de usar sus clases hijas. Pero este tipo de instanciación tiene algunas restricciones: el ciclo de vida de estas instancias NO es duradero, no las tendremos disponibles durante toda la ejecución del programa.
