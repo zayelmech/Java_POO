@@ -177,3 +177,10 @@ class Triangulo extends Figura {
 ## Clases anonimas 
 
 Las **Clases Anónimas** son una forma de instanciar clases abstractas sin necesidad de usar sus clases hijas. Pero este tipo de instanciación tiene algunas restricciones: el ciclo de vida de estas instancias NO es duradero, no las tendremos disponibles durante toda la ejecución del programa.
+
+
+- Las **Clases Abstractas** sirven para definir SubClases, la implementación de los métodos de las Clase Abstractas es opcional, para utilizar sus métodos debe ser heredada por una SubClase y la herencia de métodos es lineal.
+
+- Las **Interfaces** cuentan modificadores de acceso para métodos(default, private) lo que permite que la implementación de un método sea opcional como las clases Abstractas, los métodos de la Interface pueden implementaarse en diferentes familias, es decir, la relación va mas allá de la relación entre dos clases y la herencia de métodos deja de ser lineal.
+
+![alt text](https://raw.githubusercontent.com/zayelmech/Java_POO/main/Recursos/abstracto.jpg)
