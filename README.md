@@ -241,3 +241,20 @@ public interface Visualizable extends IReadable, Serializable {
 }
 }
 ```
+
+Las **estructuras de árbol** pertenecen al grupo de estructuras de datos no lineales, es decir, donde toda la información es almacenada con un orden específico. En estas estructuras tenemos “troncos” principales con diferentes ramificaciones que surgen a partir de ellos. Son muy útiles para trabajar con grandes cantidades de datos organizados de forma jerárquica.
+
+La forma de implementarlos en Java es usando un `Map` de tipo `TreeMap`. Recuerda que también podemos guardar Maps dentro de otros Maps. De esta forma podemos definir una lista ordenada de doctores y sus fechas disponibles para agendar citas médicas.
+
+```Java
+// 1. Doctor#1
+// - - - Fecha#1
+// - - - Fecha#2
+// 2. Doctor#2
+// - - - Fecha#1
+// - - - Fecha#2
+// 3. Doctor#3
+// - - - Fecha#1
+// - - - Fecha#2
+Map<Integer, Map<Integer, Doctor>> doctors = new TreeMap<>();
+```

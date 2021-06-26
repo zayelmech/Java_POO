@@ -71,7 +71,7 @@ public class UIMenu {
                         emailCorrect=true;
                         //obtener los datos del usuario logeado
                         doctorLogged = d;
-                        //showDoctor
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             }
