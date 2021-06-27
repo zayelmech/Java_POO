@@ -80,6 +80,7 @@ public class UIMenu {
                     if (p.getEmail().equals(email)){
                         emailCorrect=true;
                         patientLogged=p;
+                        UIPatientMenu.showPatientMenu();
                     }
                 }
             }
